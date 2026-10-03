@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NOCT — After Hours Collectors</title>
+  <meta name="description" content="Statement streetwear for making an entrance after dark.">
+  <meta name="theme-color" content="#111114">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111114'/%3E%3Cpath d='M8 24V8h4l8 12V8h4v16h-4L12 12v12z' fill='%23244BFF'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#collection">Skip to collection</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="NOCT home">NOCT<span class="wordmark-dot">.</span></a>
+    <a class="collection-link" href="#collection">The collection</a>
+    <button class="cart-trigger" id="open-cart" aria-haspopup="dialog"><span>Cart <span class="count" id="cart-count">0</span></span><span id="header-total">INR 0</span></button>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">After Hours Collectors</p>
+        <h1 id="hero-title">Make an entrance <span>after dark.</span></h1>
+        <p class="promise">Statement streetwear for making an entrance after dark.</p>
+        <a class="button primary explore" href="#collection">Explore the collection</a>
+        <p class="hero-note">Three statement pieces. One graphic signature.</p>
+      </div>
+      <div class="hero-visual" role="img" aria-label="Black nylon Signal Bomber in three-quarter back view, with ribbed cuffs and hem. Supplied concept image shown without graphics.">
+        <div class="hero-product"></div>
+        <div class="hero-caption"><span>Signal Bomber</span><span>INR 24,000</span></div>
+      </div>
+    </section>
+    <section class="collection" id="collection" aria-labelledby="collection-title">
+      <div class="section-heading"><div><p class="eyebrow">The collection</p><h2 id="collection-title">After hours.<br>In your own circle.</h2></div><p class="section-note">Shoes / Jackets / T-shirts</p></div>
+      <div class="product-grid" id="products"></div>
+    </section>
+    <section class="cart-summary" aria-label="Cart summary"><span>Your cart <span id="summary-count">0 items</span></span><div><strong id="summary-total">INR 0</strong><button class="button secondary" id="view-cart">View cart</button></div></section>
+  </main>
+  <footer><a class="wordmark" href="#top">NOCT<span class="wordmark-dot">.</span></a><p>After Hours Collectors</p><p class="concept-note">Concept collection. Product specifications and prices are proposed.</p></footer>
+  <dialog id="detail-dialog" aria-labelledby="detail-name"><button class="close" data-close="detail-dialog" aria-label="Close product details">×</button><div id="detail-content"></div></dialog>
+  <dialog id="cart-dialog" aria-labelledby="cart-title"><div class="cart-heading"><p class="eyebrow">Your selection</p><h2 id="cart-title">Your cart</h2><button class="close" data-close="cart-dialog" aria-label="Close cart">×</button></div><div id="cart-content"></div><div class="cart-total"><span>Total</span><strong id="dialog-total">INR 0</strong></div><button class="button primary continue" data-close="cart-dialog">Continue exploring</button></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
